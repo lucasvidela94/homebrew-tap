@@ -5,21 +5,21 @@
 class JiraMcp < Formula
   desc "MCP server for Jira Cloud"
   homepage "https://github.com/lucasvidela94/jira-mcp"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lucasvidela94/jira-mcp/releases/download/v0.4.1/jira-mcp_0.4.1_darwin_amd64.tar.gz"
-      sha256 "932e5d9bf91de46b4de757867faa4415a6d7b5b8d95547dc734a5a15170008ff"
+      url "https://github.com/lucasvidela94/jira-mcp/releases/download/v0.5.0/jira-mcp_0.5.0_darwin_amd64.tar.gz"
+      sha256 "6d71ef8dc224bfee98ccf5e2b0c7309bbc656c8cc323e6ec677e9eeaf7dd4a32"
 
       define_method(:install) do
         bin.install "jira-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lucasvidela94/jira-mcp/releases/download/v0.4.1/jira-mcp_0.4.1_darwin_arm64.tar.gz"
-      sha256 "723835f536bae53777b8003a49dff07e75d0080cc784afafe7c5a61b75909fc7"
+      url "https://github.com/lucasvidela94/jira-mcp/releases/download/v0.5.0/jira-mcp_0.5.0_darwin_arm64.tar.gz"
+      sha256 "004b9a9540ce2c0eb5d5a7c9d245f7e4e092edf565cdda0eeb28783a42fcb4cd"
 
       define_method(:install) do
         bin.install "jira-mcp"
@@ -29,15 +29,15 @@ class JiraMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucasvidela94/jira-mcp/releases/download/v0.4.1/jira-mcp_0.4.1_linux_amd64.tar.gz"
-      sha256 "cea58c6889765886efabde84e6baa949ac65998a5cf2b45504d0c0da0ad8b6c1"
+      url "https://github.com/lucasvidela94/jira-mcp/releases/download/v0.5.0/jira-mcp_0.5.0_linux_amd64.tar.gz"
+      sha256 "3870b02df3881c6e668c8d35ee48eee1932356f36d7ecd1052033ac4dbab5b32"
       define_method(:install) do
         bin.install "jira-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucasvidela94/jira-mcp/releases/download/v0.4.1/jira-mcp_0.4.1_linux_arm64.tar.gz"
-      sha256 "d0f95e22f7e8a18ba3654af43c1a171b2e8dfa451ab0f595e5f6af21d6426151"
+      url "https://github.com/lucasvidela94/jira-mcp/releases/download/v0.5.0/jira-mcp_0.5.0_linux_arm64.tar.gz"
+      sha256 "0a292a673b928853262b62effc5f57bde259441c624e2d372ac1f239d77a7b14"
       define_method(:install) do
         bin.install "jira-mcp"
       end
